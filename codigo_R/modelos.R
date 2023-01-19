@@ -924,7 +924,7 @@ simple_cross_validation <- function(list_of_minbucket) {
   
     eval_test_arbol_party2 <- eval_test_arbol_party %>% select(
                                  "year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                 "n", "exit_poll", "est_surv_vote", "prom_general_partido", "prom_general_wing", 
+                                 "n",  "est_surv_vote", "prom_general_partido", "prom_general_wing", 
                                  "prom_casa_partido", "prom_casa_wing", "prom_carrera_partido", 
                                  "prom_carrera_wing", "prom_carrera_casa_partido", "prom_carrera_casa_wing", 
                                  "house_effect_e", "wing_effect_e", "urna_0", "urna_7", "urna_15", 
@@ -1267,7 +1267,7 @@ simple_cross_validation <- function(list_of_minbucket) {
     medias_bag_arbol_1<-cruzadarf(data = train_semma, 
                                   vardep="errores",
                                   listconti=c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                              "n", "exit_poll", "est_surv_vote", "prom_general_partido", "prom_general_wing", 
+                                              "n",  "est_surv_vote", "prom_general_partido", "prom_general_wing", 
                                               "prom_casa_partido", "prom_casa_wing", "prom_carrera_partido", 
                                               "prom_carrera_wing", "prom_carrera_casa_partido", "prom_carrera_casa_wing", 
                                               "house_effect_e", "wing_effect_e", "urna_0", "urna_7", "urna_15", 
@@ -1312,7 +1312,7 @@ simple_cross_validation <- function(list_of_minbucket) {
     medias_bag_arbol_1_OBB<-cruzadarf(data = train_semma, 
                                       vardep="errores",
                                       listconti=c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                                  "n", "exit_poll", "est_surv_vote", "prom_general_partido", "prom_general_wing", 
+                                                  "n",  "est_surv_vote", "prom_general_partido", "prom_general_wing", 
                                                   "prom_casa_partido", "prom_casa_wing", "prom_carrera_partido", 
                                                   "prom_carrera_wing", "prom_carrera_casa_partido", "prom_carrera_casa_wing", 
                                                   "house_effect_e", "wing_effect_e", "urna_0", "urna_7", "urna_15", 
@@ -1383,7 +1383,7 @@ simple_cross_validation <- function(list_of_minbucket) {
     medias_rf_bag_arbol_1<-cruzadarf(data = train_semma,
                                      vardep="errores",
                                       listconti=c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                              "n", "exit_poll", "est_surv_vote", "prom_general_partido", "prom_general_wing", 
+                                              "n",  "est_surv_vote", "prom_general_partido", "prom_general_wing", 
                                               "prom_casa_partido", "prom_casa_wing", "prom_carrera_partido", 
                                               "prom_carrera_wing", "prom_carrera_casa_partido", "prom_carrera_casa_wing", 
                                               "house_effect_e", "wing_effect_e", "urna_0", "urna_7", "urna_15", 
@@ -1430,7 +1430,7 @@ simple_cross_validation <- function(list_of_minbucket) {
     medias_rf_bag_arbol_1_btp<-cruzadarf(data = train_semma,
                                          vardep="errores",
                                          listconti=c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                                     "n", "exit_poll", "est_surv_vote", "prom_general_partido", "prom_general_wing", 
+                                                     "n",  "est_surv_vote", "prom_general_partido", "prom_general_wing", 
                                                      "prom_casa_partido", "prom_casa_wing", "prom_carrera_partido", 
                                                      "prom_carrera_wing", "prom_carrera_casa_partido", "prom_carrera_casa_wing", 
                                                      "house_effect_e", "wing_effect_e", "urna_0", "urna_7", "urna_15", 
@@ -1586,7 +1586,7 @@ simple_cross_validation <- function(list_of_minbucket) {
         medias_bag_arbol_2<-cruzadarf(data= train_semma, 
                                       vardep="errores",
                                       listconti=c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                                  "n", "exit_poll", "est_surv_vote", "prom_general_partido", "prom_general_wing", 
+                                                  "n",  "est_surv_vote", "prom_general_partido", "prom_general_wing", 
                                                   "prom_casa_partido", "prom_casa_wing", "prom_carrera_partido", 
                                                   "prom_carrera_wing", "prom_carrera_casa_partido", "prom_carrera_casa_wing", 
                                                   "house_effect_e", "wing_effect_e", "urna_0", "urna_7", "urna_15", 
@@ -1631,7 +1631,7 @@ simple_cross_validation <- function(list_of_minbucket) {
         medias_bag_arbol_2_OOB<-cruzadarf(data = train_semma, 
                                       vardep="errores",
                                       listconti=c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                                  "n", "exit_poll", "est_surv_vote", "prom_general_partido", "prom_general_wing", 
+                                                  "n",  "est_surv_vote", "prom_general_partido", "prom_general_wing", 
                                                   "prom_casa_partido", "prom_casa_wing", "prom_carrera_partido", 
                                                   "prom_carrera_wing", "prom_carrera_casa_partido", "prom_carrera_casa_wing", 
                                                   "house_effect_e", "wing_effect_e", "urna_0", "urna_7", "urna_15", 
@@ -1677,7 +1677,7 @@ simple_cross_validation <- function(list_of_minbucket) {
         medias_rf_bag_arbol_2<-cruzadarf(data = train_semma,
                                          vardep="errores",
                                          listconti=c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                                     "n", "exit_poll", "est_surv_vote", "prom_general_partido", "error_general_partido", 
+                                                     "n",  "est_surv_vote", "prom_general_partido", "error_general_partido", 
                                                      "prom_general_wing", "error_general_wing", "prom_casa_partido", 
                                                      "error_casa_partido", "prom_casa_wing", "error_casa_wing", "prom_carrera_partido", 
                                                      "error_carrera_partido", "prom_carrera_wing", "error_carrera_wing", 
@@ -1727,7 +1727,7 @@ simple_cross_validation <- function(list_of_minbucket) {
         medias_rf_bag_arbol_2_btp<-cruzadarf(data = train_semma,
                                              vardep="errores",
                                              listconti = c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                                           "n", "exit_poll", "est_surv_vote", "prom_general_partido", "error_general_partido", 
+                                                           "n",  "est_surv_vote", "prom_general_partido", "error_general_partido", 
                                                            "prom_general_wing", "error_general_wing", "prom_casa_partido", 
                                                            "error_casa_partido", "prom_casa_wing", "error_casa_wing", "prom_carrera_partido", 
                                                            "error_carrera_partido", "prom_carrera_wing", "error_carrera_wing", 
@@ -1820,7 +1820,7 @@ simple_cross_validation <- function(list_of_minbucket) {
         medias_bag_arbol_3<-cruzadarf(data= train_semma, 
                                       vardep="errores",
                                       listconti=c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                                  "n", "exit_poll", "est_surv_vote", "prom_general_partido", "prom_general_wing", 
+                                                  "n",  "est_surv_vote", "prom_general_partido", "prom_general_wing", 
                                                   "prom_casa_partido", "prom_casa_wing", "prom_carrera_partido", 
                                                   "prom_carrera_wing", "prom_carrera_casa_partido", "prom_carrera_casa_wing", 
                                                   "house_effect_e", "wing_effect_e", "urna_0", "urna_7", "urna_15", 
@@ -1866,7 +1866,7 @@ simple_cross_validation <- function(list_of_minbucket) {
         medias_bag_arbol_3_OOB<-cruzadarf(data = train_semma, 
                                           vardep="errores",
                                           listconti=c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                                      "n", "exit_poll", "est_surv_vote", "prom_general_partido", "prom_general_wing", 
+                                                      "n",  "est_surv_vote", "prom_general_partido", "prom_general_wing", 
                                                       "prom_casa_partido", "prom_casa_wing", "prom_carrera_partido", 
                                                       "prom_carrera_wing", "prom_carrera_casa_partido", "prom_carrera_casa_wing", 
                                                       "house_effect_e", "wing_effect_e", "urna_0", "urna_7", "urna_15", 
@@ -1941,7 +1941,7 @@ simple_cross_validation <- function(list_of_minbucket) {
         medias_bag_arbol_3_vars<-cruzadarf(data = train_semma, 
                                            vardep="errores",
                                            listconti=c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                                       "n", "exit_poll", "est_surv_vote", "prom_general_partido", "prom_general_wing", 
+                                                       "n",  "est_surv_vote", "prom_general_partido", "prom_general_wing", 
                                                        "prom_casa_partido", "prom_casa_wing", "prom_carrera_partido", 
                                                        "prom_carrera_wing", "prom_carrera_casa_partido", "prom_carrera_casa_wing", 
                                                        "house_effect_e", "wing_effect_e", "urna_0", "urna_7", "urna_15", 
@@ -1987,7 +1987,7 @@ simple_cross_validation <- function(list_of_minbucket) {
         medias_rf_bag_arbol_3<-cruzadarf(data = train_semma,
                                          vardep="errores",
                                          listconti=c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                                                 "n", "exit_poll", "est_surv_vote", "prom_general_partido", "prom_general_wing", 
+                                                                 "n",  "est_surv_vote", "prom_general_partido", "prom_general_wing", 
                                                                  "prom_casa_partido", "prom_casa_wing", "prom_carrera_partido", 
                                                                  "prom_carrera_wing", "prom_carrera_casa_partido", "prom_carrera_casa_wing", 
                                                                  "house_effect_e", "wing_effect_e", "urna_0", "urna_7", "urna_15", 
@@ -2035,7 +2035,7 @@ simple_cross_validation <- function(list_of_minbucket) {
         medias_rf_bag_arbol_3_btp<-cruzadarf(data = train_semma,
                                              vardep="errores",
                                              listconti=c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                                         "n", "exit_poll", "est_surv_vote", "prom_general_partido", "prom_general_wing", 
+                                                         "n",  "est_surv_vote", "prom_general_partido", "prom_general_wing", 
                                                          "prom_casa_partido", "prom_casa_wing", "prom_carrera_partido", 
                                                          "prom_carrera_wing", "prom_carrera_casa_partido", "prom_carrera_casa_wing", 
                                                          "house_effect_e", "wing_effect_e", "urna_0", "urna_7", "urna_15", 
@@ -2284,7 +2284,7 @@ simple_cross_validation <- function(list_of_minbucket) {
     
     
     eval_test_bag_party2 <- eval_test_bag_party %>% select("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                                               "n", "exit_poll", "est_surv_vote", "prom_general_partido", "prom_general_wing", 
+                                                               "n",  "est_surv_vote", "prom_general_partido", "prom_general_wing", 
                                                                "prom_casa_partido", "prom_casa_wing", "prom_carrera_partido", 
                                                                "prom_carrera_wing", "prom_carrera_casa_partido", "prom_carrera_casa_wing", 
                                                                "house_effect_e", "wing_effect_e", "urna_0", "urna_7", "urna_15", 
@@ -2685,7 +2685,7 @@ simple_cross_validation <- function(list_of_minbucket) {
   medias_gbm_1<-cruzadagbm(data= train_semma,
                            vardep="errores",
                            listconti=c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                       "n", "exit_poll", "est_surv_vote", "prom_general_partido",
+                                       "n",  "est_surv_vote", "prom_general_partido",
                                        "prom_general_wing","prom_casa_partido", 
                                        "prom_casa_wing", "prom_carrera_partido", 
                                        "prom_carrera_wing",
@@ -2734,7 +2734,7 @@ simple_cross_validation <- function(list_of_minbucket) {
   medias_gbm_2<-cruzadagbm(data= train_semma,
                            vardep="errores",
                            listconti=c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                       "n", "exit_poll", "est_surv_vote", "prom_general_partido",
+                                       "n",  "est_surv_vote", "prom_general_partido",
                                        "prom_general_wing","prom_casa_partido", 
                                        "prom_casa_wing", "prom_carrera_partido", 
                                        "prom_carrera_wing",
@@ -2782,7 +2782,7 @@ simple_cross_validation <- function(list_of_minbucket) {
   medias_gbm_3<-cruzadagbm(data= train_semma,
                            vardep="errores",
                            listconti=c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                       "n", "exit_poll", "est_surv_vote", "prom_general_partido",
+                                       "n",  "est_surv_vote", "prom_general_partido",
                                        "prom_general_wing","prom_casa_partido", 
                                        "prom_casa_wing", "prom_carrera_partido", 
                                        "prom_carrera_wing",
@@ -2830,7 +2830,7 @@ simple_cross_validation <- function(list_of_minbucket) {
   medias_gbm_4<-cruzadagbm(data= train_semma,
                            vardep="errores",
                            listconti=c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                       "n", "exit_poll", "est_surv_vote", "prom_general_partido",
+                                       "n",  "est_surv_vote", "prom_general_partido",
                                        "prom_general_wing","prom_casa_partido", 
                                        "prom_casa_wing", "prom_carrera_partido", 
                                        "prom_carrera_wing",
@@ -3072,7 +3072,7 @@ simple_cross_validation <- function(list_of_minbucket) {
   
   
   eval_test_gbm_party2 <- eval_test_gbm_party %>% select("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                                         "n", "exit_poll", "est_surv_vote", "prom_general_partido", "prom_general_wing", 
+                                                         "n",  "est_surv_vote", "prom_general_partido", "prom_general_wing", 
                                                          "prom_casa_partido", "prom_casa_wing", "prom_carrera_partido", 
                                                          "prom_carrera_wing", "prom_carrera_casa_partido", "prom_carrera_casa_wing", 
                                                          "house_effect_e", "wing_effect_e", "urna_0", "urna_7", "urna_15", 
@@ -3566,7 +3566,7 @@ simple_cross_validation <- function(list_of_minbucket) {
   
   for (iter in listaiter)
   {rednnet<- train( errores~year_elec+n_days_field+days_to_elec+porc_surveys_firm+ 
-                    n+exit_poll+est_surv_vote+prom_general_partido+
+                    n+est_surv_vote+prom_general_partido+
                     prom_general_wing+prom_casa_partido+ 
                     prom_casa_wing+prom_carrera_partido+ 
                     prom_carrera_wing+
@@ -3621,7 +3621,7 @@ simple_cross_validation <- function(list_of_minbucket) {
   medias_red_arbol_a<-cruzadaavnnet(data = train_semma,
                           vardep="errores",
                           listconti=c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                        "n", "exit_poll", "est_surv_vote", "prom_general_partido",
+                                        "n",  "est_surv_vote", "prom_general_partido",
                                         "prom_general_wing","prom_casa_partido", 
                                         "prom_casa_wing", "prom_carrera_partido", 
                                         "prom_carrera_wing",
@@ -3670,7 +3670,7 @@ simple_cross_validation <- function(list_of_minbucket) {
   medias_red_arbol_b<-cruzadaavnnet(data = train_semma,
                                   vardep="errores",
                                   listconti=c("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                                "n", "exit_poll", "est_surv_vote", "prom_general_partido",
+                                                "n",  "est_surv_vote", "prom_general_partido",
                                                 "prom_general_wing","prom_casa_partido", 
                                                 "prom_casa_wing", "prom_carrera_partido", 
                                                 "prom_carrera_wing",
@@ -3731,7 +3731,7 @@ simple_cross_validation <- function(list_of_minbucket) {
   nnetgrid <- expand.grid(size=1, decay=0.5, bag=F)
   nnetgrid <- expand.grid(size=6, decay=0.5, bag=F)
   red_ganador <- train(errores~year_elec+n_days_field+days_to_elec+porc_surveys_firm+ 
-                         n+exit_poll+est_surv_vote+prom_general_partido+
+                         n+est_surv_vote+prom_general_partido+
                          prom_general_wing+prom_casa_partido+ 
                          prom_casa_wing+prom_carrera_partido+ 
                          prom_carrera_wing+
@@ -4096,7 +4096,7 @@ simple_cross_validation <- function(list_of_minbucket) {
   
   
   eval_test_red_party2 <- eval_test_red_party %>% select("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                                         "n", "exit_poll", "est_surv_vote", "prom_general_partido", "prom_general_wing", 
+                                                         "n",  "est_surv_vote", "prom_general_partido", "prom_general_wing", 
                                                          "prom_casa_partido", "prom_casa_wing", "prom_carrera_partido", 
                                                          "prom_carrera_wing", "prom_carrera_casa_partido", "prom_carrera_casa_wing", 
                                                          "house_effect_e", "wing_effect_e", "urna_0", "urna_7", "urna_15", 
@@ -4985,7 +4985,7 @@ simple_cross_validation <- function(list_of_minbucket) {
   
   
   eval_test_SVM_party2 <- eval_test_SVM_party %>% select("year_elec", "n_days_field", "days_to_elec", "porc_surveys_firm", 
-                                                             "n", "exit_poll", "est_surv_vote", "prom_general_partido", "prom_general_wing", 
+                                                             "n",  "est_surv_vote", "prom_general_partido", "prom_general_wing", 
                                                              "prom_casa_partido", "prom_casa_wing", "prom_carrera_partido", 
                                                              "prom_carrera_wing", "prom_carrera_casa_partido", "prom_carrera_casa_wing", 
                                                              "house_effect_e", "wing_effect_e", "urna_0", "urna_7", "urna_15", 
